@@ -36,7 +36,8 @@ CC	= gcc
 INCLUDE	= -I$(DESTDIR)$(PREFIX)/include
 CFLAGS	= $(DEBUG) -Wall -Wextra $(INCLUDE) -Winline -pipe
 
-LDFLAGS	= -L$(DESTDIR)$(PREFIX)/lib
+#LDFLAGS	= -L$(DESTDIR)$(PREFIX)/lib
+LDFLAGS	= -L$(DESTDIR)
 LIBS    = -lwiringPi -lwiringPiDev -lpthread -lrt -lm -lcrypt
 
 # May not need to  alter anything below this line
